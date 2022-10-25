@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: honeydew;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+#posts {
+    width: 400px;
+}
+
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+i {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+/* 
+error message */
+
+#msg {
+    color: red;
+}
