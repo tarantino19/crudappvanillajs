@@ -1,0 +1,13 @@
+
+
+.blog {
+        background-color: aliceblue;
+        padding: 20px;
+        margin: 20px;
+}
+
+.hidden {
+    display: none;
+    /* color: red; */
+}
+
