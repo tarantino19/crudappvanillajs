@@ -7,6 +7,7 @@ const dateInput = document.getElementById ("dateInput")
 const textArea= document.getElementById ("textArea")
 const tasks = document.getElementById ("tasks")
 const add = document.getElementById ("add")
+const bookCover = document.getElementById ("bookCover")
 
 form.addEventListener ('submit',  (e) => {
         e.preventDefault ();
@@ -32,11 +33,13 @@ const acceptData = () => {
     data["text"] = textInput.value;
     data["date"] = dateInput.value
     data["description"] = textArea.value
+    // data["bookcover"] = bookCover.value
     console.log(data);
     add.setAttribute ("data-bs-dismiss", "modal");
     add.click ();
     (() => {
         add.setAttribute("data-bs-dismiss", "");
+        // console.log(`${bookCover.value}`);
     })();
 }
 
@@ -44,6 +47,7 @@ const createTask = () => {
     tasks.innerHTML += 
     `
     <div>
+    <img src="${data.bookcover}">
     <span class="fw-bold">${data.text}</span>
     <span class="small text-secondary">${data.date}</span>
     <p>${data.description}</p>
